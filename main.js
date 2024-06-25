@@ -92,7 +92,7 @@ form.addEventListener("submit", (event) => {
 
     if (result.numDaysCar === "") {
       price = 0;
-    } else if (result.numDaysCar >= 3 || result.numDaysCar < 7) {
+    } else if (result.numDaysCar >= 3 && result.numDaysCar < 7) {
       price -= 20;
     } else if (result.numDaysCar >= 7) {
       price -= 50;
