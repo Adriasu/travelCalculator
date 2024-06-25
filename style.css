@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playwrite DE Grund;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://programaspasoapaso.wordpress.com/wp-content/uploads/2011/11/ablue.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px blue;
+    margin: 100px;
+    min-width: 400px;
+    min-height: 500px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    background: rgba(1, 18, 75, 0.5);
+    box-shadow: rgb(93 24 220) 0px 10px 39px 0px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 300px;
+    min-height: 400px;
+    color: white;
+}
+
+label{
+    font-weight: bold;
+}
+
+.inputs{
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    border: solid 2px blue;
+}
+
+button{
+    padding: 5px 10px;
+    background-color: rgba(9, 10, 80, 0.479);
+    color: rgb(50, 195, 205);
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: 1s;
+    border: 3px solid rgb(50, 195, 205);
+    font-weight: bold;
+}
+button:hover{
+    letter-spacing: 3px;
+    box-shadow: rgb(93 24 220) 0px 10px 39px 0px;
+    transform: scale(1.2);
+    background-color: rgb(50, 195, 205);
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+p{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(201, 197, 219);
+}

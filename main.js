@@ -10,31 +10,29 @@ const labelNumNights = document.createElement("label");
 const inputNumNights = document.createElement("input");
 const labelNumDaysCar = document.createElement("label");
 const inputNumDayCar = document.createElement("input");
-const inputCosting = document.createElement("input");
+const inputCosting = document.createElement("button");
 const textResult = document.createElement("p");
 
 document.querySelector("body").appendChild(section);
 
 section.appendChild(form);
 form.appendChild(labelCity);
-form.appendChild(document.createElement("br"));
 form.appendChild(selectCity);
 selectCity.appendChild(optionBarcelona);
 selectCity.appendChild(optionMadrid);
 selectCity.appendChild(optionSevilla);
 selectCity.appendChild(optionValencia);
-form.appendChild(document.createElement("br"));
 form.appendChild(labelNumNights);
-form.appendChild(document.createElement("br"));
 form.appendChild(inputNumNights);
-form.appendChild(document.createElement("br"));
 form.appendChild(labelNumDaysCar);
-form.appendChild(document.createElement("br"));
 form.appendChild(inputNumDayCar);
-form.appendChild(document.createElement("br"));
 form.appendChild(inputCosting);
-form.appendChild(document.createElement("br"));
 form.appendChild(textResult);
+
+selectCity.classList.add("inputs")
+inputNumDayCar.classList.add("inputs")
+inputNumNights.classList.add("inputs")
+console.log(selectCity);
 
 labelCity.innerHTML = "Ciudad:";
 labelCity.setAttribute("for", "cities");
@@ -62,7 +60,7 @@ inputNumDayCar.id = "numDaysCar";
 inputNumDayCar.name = "numDaysCar";
 
 inputCosting.type = "submit";
-inputCosting.innerHTML = "Calcular coste";
+inputCosting.textContent = "Calcular coste";
 textResult.innerHTML = "Coste: 0€";
 
 form.addEventListener("submit", (event) => {
